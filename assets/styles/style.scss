@@ -64,6 +64,14 @@ html, body{
     }
 }
 
+.ir-arriba {
+    a {
+    color: #000;
+    }
+    :hover{
+        color: #3f3f3f;
+    }
+}
 #capacitaciones, #capacitaciones-gratis {
     width: 75%;
     margin: 0 auto;
