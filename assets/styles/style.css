@@ -1,217 +1,65 @@
-html, body {
-  height: 100%;
-  width: 100%;
+@import url('https://fonts.googleapis.com/css2? family = Poppins: ital, wght @ 0,400; 0,500; 1,300; 1,600 & display = swap');
+@import url('https://fonts.googleapis.com/css2? family = Pacifico & display = swap'); 
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #020202;
+  font-size: 18px;
+  font-family: "Poppins";
+  line-height: 20px;
+  color: #b1b4bd;
+  background-color: #323a45;
 }
 
-.logo {
-  width: 120px;
-  padding-top: 1.3rem;
+a{
+  color: #b1b4bd;
+  font-weight: 5000;
 }
 
-.preguntas {
-  width: 80%;
-  margin: 0 auto;
-  padding: 0%;
+a:hover{
+  color: #e74c3c;
 }
 
-.navbar {
-  padding: .8 rem;
+.header-background{
+position: static;
+display: block;
+overflow: visible;
+top: 0;
+height: auto;
+min-height: 750px;
+margin-bottom: 50px;
+padding-bottom: 70px;
+background-image: "webkit-gradient(linear, left top, left bottom, from(rgba(50,58, 69, 0.9))";
+background-image: linear-gradient(180deg, rgba(50,58, 69, 0.55), rgba(50,58, 69, 0.74)), url(../img/impuesto-a-las-ganancias-personas-juridicas.jpg);
+flex-direction: column;
+background-position: 0, 0, 100%, 50%;
+background-size: auto, cover;
+white-space: normal;
+object-fit: fill;
+-o-object-fit: fill;
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+-webkit-flex-direction: column;
+-ms-flex-direction: column;
 }
 
-.navbar-nav li {
-  padding-right: 15px;
+.sticky-nav{
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  padding: 20px;
+  z-index: 1;
+  -webkit-align-self: auto
+  -ms-flex-item-align: auto
+  -ms-grid-row-align: auto
+  -webkit-box-ordinal-group: 1;
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  background-color:  rgba(12,32, 59, 0.5);
+
 }
 
-.nav-link {
-  font-size: 1.3em !important;
-  color: #fff !important;
-}
-
-.carousel-inner img {
-  width: 100vw;
-  height: 70vh;
-}
-
-.carousel-caption {
-  position: absolute;
-  top: 57%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
-
-.carousel-caption h5 {
-  font-size: 250%;
-  -webkit-transform: uppercase;
-          transform: uppercase;
-  text-shadow: 3px 3px 15px #000;
-}
-
-.carousel-caption p {
-  font-size: 130%;
-  font-weight: 400;
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: .8rem;
-}
-
-#capacitaciones, #capacitaciones-gratis {
-  width: 75%;
-  margin: 0 auto;
-}
-
-#capacitaciones hr, #capacitaciones-gratis hr {
-  border-top: 2px solid #b4b4b4;
-  width: 95%;
-  margin-top: .3rem;
-  margin-bottom: 1rem;
-}
-
-#nosotros {
-  width: 80%;
-  margin-top: 2rem;
-  border: 2px solid black;
-  padding: 1rem;
-  -webkit-box-shadow: 0 10px 6px -6px #777;
-          box-shadow: 0 10px 6px -6px #777;
-}
-
-#nosotros h3 {
-  margin-left: 4rem;
-}
-
-.nosotros-texto {
-  margin-left: 4em;
-  text-align: justify;
-}
-
-.img-profesor {
-  margin: 0 auto;
-  width: 350px;
-  -webkit-box-shadow: 10px 5px 2px -1px #777;
-          box-shadow: 10px 5px 2px -1px #777;
-}
-
-.fa-linkedin-in, .fa-user-tie, .fa-users, .fa-check-double {
-  font-size: 4rem;
-  margin: 2rem;
-  color: blue;
-}
-
-#social {
-  height: 12em;  
-}
-
-.fa-facebook,
-.fa-twitter,
-.fa-instagram,
-.fa-youtube {
-  font-size: 4.8em;
-  color: #5423c5;
-}
-
-.fa-facebook:hover,
-.fa-twitter:hover,
-.fa-instagram:hover,
-.fa-youtube:hover {
-  color: #886da8;
-  font-size: 6em;
-}
-
-.suscripcion {
-  width: 100%;
-}
-
-#heroSuscripcion {
-  padding-top: 1.5rem;
-  width: 85%;
-  margin: 0 auto;
-}
-
-footer {
-  width: 100%;
-  background-color: #3f3f3f;
-  color: #d5d5d5;
-  padding-top: 2rem;
-}
-
-footer a {
-  color: #d5d5d5;
-  padding-top: .2rem !important;
-}
-
-footer a:hover {
-  color: #fff;
-}
-
-.label-formulario {
-  width: 75%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  font-size: 1rm;
-  margin: 1rem auto;
-}
-
-.label-formulario .input {
-  height: 1.8rem;
-}
-
-::-webkit-input-placeholder {
-  font-size: 1.2rem;
-}
-
-:-ms-input-placeholder {
-  font-size: 1.2rem;
-}
-
-::-ms-input-placeholder {
-  font-size: 1.2rem;
-}
-
-::placeholder {
-  font-size: 1.2rem;
-}
-
-.btn-suscribirse {
-  margin: 1rem;
-  border: 3px solid white;
-  display: block;
-  text-align: center;
-  width: 75%;
-  margin: 20px auto;
-  font-weight: bold;
-  cursor: pointer;
-  color: white;
-}
-
-.cierre {
-  padding-top: 2rem;
-}
-
-.construccion {
-  width: 350px;
-  margin: 0 auto;
-}
-
-.video {
-  width: 90%;
-  height: 95%;
-  margin-left: 2rem;
-}
-
-.video-container {
-  width: 80%;
-  margin: margen;
-  -webkit-box-shadow: 1px 1px 10px 6px rgba(0, 0, 0, 0.8);
-          box-shadow: 1px 1px 10px 6px rgba(0, 0, 0, 0.8);
-}
-/*# sourceMappingURL=style.css.map */
